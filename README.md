@@ -9,9 +9,13 @@ Build tools for windows command-line test application
 
 ### Build
 * Create a build directoryGenerate Ninja toolchain
+
 `mkdir build`
+
 * Configure build environment for building with Visual Studio compiler
+
 `C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Auxiliary\Build\vcvarsall.bat`
+
 * Generate Ninja toolchain
 ```
 cd build
@@ -19,6 +23,7 @@ cmake -G "Ninja" .. -DCMAKE_CXX_FLAGS=/D_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNI
 ```
 
 > The `D_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING` is required to avoid the deprecation warnings introduced starting with the Visual Studio 2017 compilers.
+
 #### Build application and unit-tests
 `ninja`
 
