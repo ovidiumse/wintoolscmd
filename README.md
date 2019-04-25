@@ -16,6 +16,7 @@ cmake -G "Ninja" .. -DCMAKE_CXX_FLAGS=/D_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNI
 ```
 > The `D_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING` is required to avoid the deprecation warnings introduced starting with the Visual Studio 2017 compilers.
 2. Build application and unit-tests
+
 `ninja`
 
 ### Run unit-tests
