@@ -25,10 +25,10 @@ cmake -G "Ninja" .. -DCMAKE_CXX_FLAGS=/D_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNI
 > The `D_SILENCE_TR1_NAMESPACE_DEPRECATION_WARNING` is required to avoid the deprecation warnings introduced starting with the Visual Studio 2017 compilers.
 
 #### Build application and unit-tests
-`ninja`
+```ninja```
 
 ### Run unit-tests
-`ninja test`
+```ninja test```
 
 ### References
 1. [Integrate GTEST into an existing cmake project](https://github.com/ttroy50/cmake-examples/tree/master/05-unit-testing/google-test-download)
